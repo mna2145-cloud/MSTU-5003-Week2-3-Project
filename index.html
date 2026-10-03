@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hold to Jump</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="game" aria-labelledby="title">
+      <h1 id="title">Hold to Jump</h1>
+      <p class="instructions">Press Space to jump. Hold it to go higher, then release to land.</p>
+
+      <section class="play-area" aria-label="Jump area">
+        <div class="figure" id="figure" aria-hidden="true"></div>
+        <div class="ground"></div>
+      </section>
+
+      <div class="charge-label" id="charge-label">Jump power</div>
+      <div class="meter" role="progressbar" aria-label="Jump power" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="meter-fill" id="meter-fill"></div>
+      </div>
+      <p class="status" id="status" aria-live="polite">Ready when you are.</p>
+    </main>
+  </body>
+</html>
